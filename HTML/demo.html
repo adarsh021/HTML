@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+     <!--
+       * Insering images
+            -> to insert image ,use <img> tag.
+            -> it is a single tag, void element.
+            -> it is a inline element.
+            ->used to insert static images
+            -> preferably .webb images should be usedn in web page
+      -> Syntax: 
+               <img src = "" alt>
+   
+                -> Attributes
+               1.src - source : Name/path/url of the image
+               2.alt - alternate: describes the alternative name given to image to enhance screen readability. it works in the absense of source
+               3. height & width - px , %.
+               4. title 
+    -->
+    <!--1. By Using name-->
+    <img src="image.png" alt="arrow img" width="15%" title="Sandeep Images" style="border-radius: 30px;">
+    <!--2. By using path-->
+    <img src="./assets/images/image.png" alt="" width="300px">
+
+    <!--By using url path : this is Absolute path-->
+    <img src="https://b.zmtcdn.com/data/o2_assets/b4f62434088b0ddfa9b370991f58ca601743060218.png" alt="momos" height="500px">
+    <hr>
+    <picture>
+     <!--Mobile-->
+     <source media="(max-width:425px)" srcset="https://j1r.scene7.com/is/image/j1r/L46027GL_01_L460_27MY_BEV_BGG_EXT_HERO_Front_3_4_9X16?wid=1280&fit-stretch%2C1" width="70%">
+
+     <!--Tablet-->
+     <source media="(max-width:768px)" srcset="https://jlr.scene7.com/is/image/jlr/L46125GL_303103802_STEALTH_001_DX" width="70%">
+
+     <!--Laptop-->
+     <source media="(max-width:1024px)" srcset="https://jlr.scene7.com/is/image/jlr/L46127GL_303105264_059_16x9_DX" width="70%">
+
+     <!--Default-->
+    <img src="https://jlr.scene7.com/is/image/jlr/L46125GL_303103802_STEALTH_001_DX" alt="Range Rover Sports" width="70%">
+
+    </picture>
+    <hr>
+    <!--Inserting vedeo-->
+    <video src="https://jlr.scene7.com/is/image/jlr/L46125GL_303103802_STEALTH_003_DX?wid=480&fit=stretch%2C1" width="100%" muted loop controls poster="https://jlr.scene7.com/is/image/jlr/L46127GL_303105264_060"></video>
+    <!--Inserting audio-->
+</body>
+</html>

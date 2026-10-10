@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <!-- 1. By using name : -->
+     <!-- <img src="IMG_1490~2.jpg" alt="Aalok pandey" width="300px" title="Aalok pandey" style="border-radius: 30px;"> -->
+     <!-- 2. By using Path : Relative path -->
+     <!-- <img src="./assets/img/IMG_20250608_182753909_HDR_AE.jpg" alt="" width="308px" style="border-radius: 30px;"> -->
+
+     <!-- 3. By using URL Absolute path-->
+      <!-- <img src="https://b.zmtcdn.com/data/o2_assets/110a09a9d81f0e5305041c1b507d0f391743058910.png" alt="Burger" height="400px">  -->
+
+      <!-- 
+      -> Insearting images
+        * To insert image, use <img> tag.
+        * It is a single tag, void element.
+        * It is inline element
+        * Used to insert static images.
+        * Preferably .webp images should be used in web page
+        * Syntax:
+           <img src = "" alt="">
+        * Attributes:
+           1. Src - Source : Name/ Path/URL of the image
+           2. alt - alternate: Describe the alternative name given to image to enhance screen readability. It work in the absense of source.
+           3. height & width - px, %.
+           4. title    
+      
+-->
+     <picture>
+  <source
+    media="(max-width: 425px)"
+    srcset="https://jlr.scene7.com/is/image/jlr/L46027GL_01_L4…_EXT_HERO_Front_3_4_9X16?wid=1280&fit=stretch%2C1"
+  >
+
+  <source
+    media="(max-width: 768px)"
+    srcset="https://jlr.scene7.com/is/image/jlr/L46027GL_303105263_066-1?wid=1300"
+  >
+
+  <source
+    media="(max-width: 1024px)"
+    srcset="https://jlr.scene7.com/is/image/jlr/L48128GL_303105691_012_TEASE?wid=740&fit=stretch%2C1"
+  >
+
+  <img
+    src="https://jlr.scene7.com/is/image/jlr/L55124GL_303101952_014?wid=420&fit=stretch%2C1"
+    alt=""
+    width="100%"
+  >
+</picture>
+
+
+     <!-- 
+       * Picture 
+        -> to insert responsive image according to the different devices <picture> tag will be used.
+        -> It is paired tag, contains <source> that defines different sources to different devices.
+        -> Syntax:
+          <picture>
+            <source media="" srcset="">
+            <source media="" srcset="">
+            <source media="" srcset="">
+            <img src="" alt="">
+          </picture>
+     
+     -->
+
+<!-- Inserting video -->
+ <!-- <video src="https://jlr.scene7.com/is/content/jlr/L460_26MY_303104329_THE_MEETING_T1_PROD_FILM_15s_16x9_H264_Clean#t=0,6" width="100%" muted loop controls poster=""></video> -->
+ 
+ <!--  
+ -- Inserting video ---
+   -> <video> tag is used to insert video into the web page.
+    -> It is paired tag, hold the content to display an error message when browser is not supporting.
+    -> It doesnot support to insert youtube videoss.
+    -> Syntax:
+    <video src=""> Video not supported by browser</video>
+    ->Attributes:
+    1. src
+    2. autoplay
+    3. muted
+    4. controls
+    5. loop
+    6. poster
+
+
+
+
+  -->
+</body>
+</html>

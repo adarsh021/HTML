@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Form
+      -> Form is used to collect data from user.
+      -> We can collect text, password, number, email, date, time, uri, color.
+      -> controlles
+         Check box
+         radio button
+         dropdown menu
+       -> Syntex:
+       <form action="" method="">form element</form>
+    -->
+    <form action="">
+        <label for="">Enter username</label>
+        <input type="text" name="Username" id="uname" value="" placeholder="e.g example" maxlength="12" minlength="6" required pattern="[a-zA-Z0-9&]+" accept=".pdf"><br><br>
+        <input type="color" name="" id=""><br><br>
+        <input type="date" name="" id=""><br><br>
+        <input type="datetime" name="" id=""><br><br>
+        <input type="datetime-local" name="" id=""><br>
+        <input type="email" name="" id=""><br><br>
+        <input type="file" name="" id="" accept=""><br><br>
+        <input type="month" name="" id=""><br><br>
+        <input type="number" name="" id="" step="2" min="0" max="99"><br><br>
+        <input type="password" name="" id=""><br><br>
+        <input type="range" name="" id="" max="100" value="71"><br><br>
+        <input type="search" name="" id="" placeholder="Start typing here...."><br><br>
+        <input type="time" name="" id=""><br><br>
+        <input type="url" name="" id=""><br><br>
+        <input type="week" name="" id=""><br><br>
+    </form>   
+    <!-- Radio button -->
+     <p>Payment mode</p>
+    <input type="radio" name="payment" id="pay-later"><label for="pay-later">Pay later</label><br><br>
+    <input type="radio" name="payment" id="net"><label for="net">Net/Mobile Banking</label><br><br>
+    <input type="radio" name="payment" id="credit"><label for="credit">Credit/Debit</label><br><br>
+    <input type="radio" name="payment" id="upi"><label for="upi">UPI</label><br><br>
+    <input type="text" name="" id=""><br><br>
+    <input type="radio" name="payment" id="emi"><label for="emi">EMI</label><br><br>
+    <input type="radio" name="payment" id="cod"><label for="cod">COD</label><br><br>
+
+    <p>check box</p>
+    <input type="radio" name="" id="Java"><label for="Java">Java</label>
+    <input type="radio" name="" id="Spring"><label for="Spring">Spring</label>
+    <input type="radio" name="" id="JDBC"><label for="JDBC">JDBC</label><br><br>
+    <input type="radio" name="" id="Hibernate"><label for="Hibernate">Hibernate</label>
+    <input type="radio" name="" id="Springboot"><label for="Springboot">Springboot</label>
+    <input type="radio" name="" id="SQL"><label for="SQL">SQL</label><br><br>
+    <input type="radio" name="" id="Web Dev"><label for="Web Dev">Web Dev</label>
+    <input type="radio" name="" id="Web Tech"><label for="Web Tech">Web Tech</label>
+    <input type="radio" name="" id="HTML"><label for="HTML">HTML</label><br><br>
+    <input type="radio" name="" id="CSS3"><label for="CSS3">CSS3</label>
+    <input type="radio" name="" id="GIT"><label for="GIT">GIT</label><hr><hr>
+
+    <!-- Drop Down menue -->
+     <p>Choose your domain:</p>
+     <select name="" id="">
+        <option value="" hidden>....Choose here....</option>
+         <option value="" selected>Softwere Development</option>
+         <option value="">Softwere Testing</option>
+        <option value="">Devops</option>
+        <option value="">Network and security</option>
+        <option value="">Supports</option>
+     </select>
+     <hr><hr>
+     <!-- Data list -->
+      <input type="text" list="products" placeholder="Search your product here...">
+      <datalist id="products">
+        <option value="Mobile">
+        <option value="Refridegertor">
+        <option value="Washing machine">
+        <option value="Shoe">
+        <option value="T shirt">
+        <option value="Groceries">
+      </datalist>
+      <hr><hr>
+      <!-- Text Area -->
+       <p>Rating and feedback</p>
+       <h1>⭐⭐⭐⭐⭐</h1>
+       <textarea name="" id="" cols="30" rows="10" style="resize: none;" placeholder="Whats on your mind..."></textarea>
+       <hr><hr>
+       <!-- buttons -->
+        <input type="Submit" value="login">
+        <input type="button" value="Delete">
+        <input type="reset" value="Reset">
+        <button type="submit">Login</button>
+
+</body>
+</html>

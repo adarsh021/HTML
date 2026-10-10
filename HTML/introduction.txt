@@ -1,0 +1,441 @@
+      ----     HTML    ----
+
+* Stands for hyper text markup language
+* Used to create structure of web pges.
+* Also know as skelten of web page.
+* A single html doc is know as web pages.
+* invented by "TIM- BERNERS LEE" in 1991. at wwwconsortium(cern)
+* Hyper text : it refers to an text on web page which is link internaly together with another web page.
+* Markup lan : it is an high level lang, use to create structure of web page using tags.
+* Curent version of html is html5.
+* currenty html lang is maineging by WHATWG(Web hypertext application technology working grouping).
+
+     ---- Features of html ----
+
+* It is widely used markup lang on web development to develop web pages.
+* It is easy to learn.
+* It is light weighted and fast load.
+* Saports to store large file and it is defaultely enabled by brauser angine.
+* Major browser suports HTML.    
+* It is case insenstive.
+
+     ----  structure of HTML ----
+
+   <!DOCTYPE html> →Holds current version
+       <html> → know as a root element indicate the starting pionts
+       <head>
+             <link> → use to link external styling sheets and to change the icon.
+             <meta> → contens discription and hiden properties.
+             <title></title> → add tital to web pages.
+             <script></script> → to embeded | link clint side scripting file (js| jq).
+             <style></style> → to embeded styling properties into doc.
+       </head>
+       <body>
+
+       </body>
+       </html>
+
+                                     Browser
+                                    ↙        ↘
+                               HTML             CSS
+                                 ↓               ↓
+                               HTML parse       CSS parse
+                                 ↓               ↓
+                               DOM              CSSOM
+                                  ↘             ↙
+                                    Rendered tree
+                                       ↓
+                                    Layout
+                                       ↓
+                                    Painting
+                                       ↓ 
+                                    Compose
+                                       ↓
+                                    Screen
+                                       ↓
+                                    User  
+                                    
+            
+            Excecution
+               1. Run - Run without Debugging
+               2. Terminal - Run Active File
+               3. Using Live Server
+               4. Terminal - new Treminal - start file_name.html + Enter
+               5. ctrl + F5
+               6. alt + B
+               7. Copy path and paste in browser.
+
+      ------ Tags -------
+
+   * tags are predefined keyword write inside < >(angular bracket)
+   * tags act line contains to show content in browers
+
+   Types
+     
+      1. Paired tags/ Double tags.
+         
+         Syntax:
+             <open>content</close>
+            
+         * The tags which are having both opening and closing tags
+         * The tag always wrap content inside
+
+         Ex:-  <head></head>, <body></body>, <p></p>, <table></table>
+
+      2. Unparied tags/Single tags
+         
+         * The tags that are having only opening tag / The tag which is colse by itself
+         * Also know as void element. self closing tag
+
+         Syntax: 
+              <open>
+
+         Ex:- <line>, <meta>, <img>, <hr>, <br>, <input>
+
+      ------ Heading Tags -------
+
+      * Html allow the deveper to insert 6 heading tag
+
+        1. <h1></h1> - ain heading heading tag onlu use one time.
+        2. <h2></h2>
+        3. <h3></h3>
+        4. <h4></h4>
+        5. <h5></h5>
+        6. <h6></h6>
+
+Tags:
+
+      -> tags are teh predefined keywords written inside angular bracket(<>)
+      -> tags acts like container to hold content, and tells the broweser how to display the content to the user.
+      -> Example: <html>, <img> and <video>
+      -> Types:
+              1. Paired tag:
+
+                  * The tags which are having both opening and closing tags.
+                  * Also know as double tag
+                  * Paired tags hold the content inside it and returns the content.
+                  * Syntax:
+                          <open>text</close>
+                  * Example: <tital></title>, <p></p>
+
+               2. Unparied tag: 
+                  * The tag which closes by itself/ the tags which are having only opening tag are known as Unparied tag.
+                  * Also know as single tag, Void elements(returns nothing).
+                  * Syntax:
+                         <open attributes>
+
+                  * Example: <link>, <meta>, <img> and <hr>
+
+   Heading Tags:
+    1. <h1></h1> -> Main heading tag and should be used only one time in one page.
+          1. <h1></h1>
+          1. <h2></h2>
+          1. <h3></h3>
+          1. <h4></h4>
+          1. <h5></h5>
+          1. <h6></h6>
+
+   Samantic element:
+        -> elements those describes the content meaning and purpose.
+        -> Used  for readability, SEO optimization.
+        -> Ex: <div> -> <nav> to describe navigation content.
+                        <aside> to create side menu.
+                        <main>/<article> to describe main content in web page
+                        <footer> to describe footer content.
+                        <b> -> <Strong>
+                        <u> -> <ins>
+                        <i> -> <em>
+
+   attributes:
+        -> ttributes are paRT of markup language, used to add behavior and style to an html element.
+        -> Makes tag as fully functional.
+        -> Common attributes - style, id, class, name, type, src, href, controls, checked, etc.
+        -> Syntax:
+                 <open attr_name="value">Content</close>
+
+   Body tag attributes:
+
+        -> bg-color - defines background color to web page.
+        -> background - adds an image as background.
+        -> text - defines color of text content.
+        -> Align - Horizontally Align the content left, right, center.
+
+   Text document
+        -> <p> paragraph tag
+             * used to insert text doc.
+             * It is paired tag, block element.
+             * Used in adding description, detail text.
+             * Syntax:
+                    <p>Content</p>
+
+        -> Note:- If wonot allow for any spaces rather than single white spaces
+
+        -> <br> break tag
+             * Used to break the line of any point.
+             * Unparied and void element.
+             * Donot suport for any attributes
+
+        -> <hr> - Horizontal rules
+             * it will couse the browers to display a Horizontally line across the window
+             * Unparied
+             * Style, color
+
+        -> <Pre> - predefined/preformate
+            * Allow the developer to maintain white space, tab space and new line        
+  
+   <h2>Charecter formating tag</h2>
+    <p>This is <b>Bolder</b> text</p>
+    <p>this is <strong>Stronger</strong> text</p>
+    <p>This is <i>Italic</i> text</p>
+    <p>This is <em>Emphesized</em> text</p>
+    <p>This is <u>Underline</u> text</p>
+    <p>THis is <ins>Inserted</ins> taxt</p>
+    <p>This is <big>Bigger</big> text</p>
+    <p>This is <small>Smaller</small> text</p>
+    <p>This is <q>Quoted</q> text</p>
+
+    <!-- Superscript -->
+
+    <p>
+       (a+b)<sup><small>3</small></sup>
+       =a <sup><small>3</small></sup>
+       +b <sup><small>3</small></sup>
+       +3ab(a+b)
+    </p>
+    <!-- Subscript -->
+    <p>
+        Na<sub><small>2</small></sub>
+        Co<sub><small>3</small></sub>
+    </p>
+    <p>This is <mark>Highlighted</mark> text</p>
+    <p><strike>MRP. &#8377;1,49,990.00</strike></p>
+    <p>Deal Price: &#8377;1,29,999.00</p>
+
+
+    <!-- bI-DIRECTIONAL ovrride -->
+     <bdo dir="rt1">Jspiders BTM Bengaluru</bdo>
+
+     <!-- Hide/show content -->
+
+     <p>Courses available in Jspider</p>
+     <details>
+        <summary>Java Full Stack</summary>
+            <p>* Web Technology</p>
+            <p>* Core java</p>
+            <p>* Adv java</p>
+            <p>* Oops</p>
+            <p>* Hibernate</p>
+            <p>* Sql</p>
+        
+     </details>
+     <!-- Abbrivation tag -->
+      <abbr title="Computer Science">Cs</abbr><br>
+      <!-- Progress -->
+
+      <progress max="100" value="29"></progress>
+        <!-- division : Used to describe or section in the web page, it holds any content inside it, it is block element -->
+        <div style="height: 300px; width: 250px; background-color: lightsalmon;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae perferendis distinctio. Est, quia reprehenderit?</p>
+       </div>
+       <!-- Semantic tag: the tags which are used to show the data based on their meaning and content -->
+
+       <section>To add main section</section>
+       <header>To describe header content in web page</header>
+       <nav>To insert navigation items</nav>
+       <aside>To insert side mainu content</aside>
+       <article>To insert description content of web page</article>
+       <main>To create main description content</main>
+       <footer>To insert footer content</footer>
+
+       <!-- Span: used to select content inside the main tags. it is inline element. -->
+        <h1 style="font-size: 100px;">
+            <span style="color: orange;">A</span>
+            <span style="color: lightsalmon;">D</span>
+            <span style="color: blue;">A</span>
+            <span style="color: rgb(5, 113, 113);">R</span>
+            <span style="color: green;">S</span>
+            <span style="color: red;">H</span>
+        </h1>
+
+ 
+      -> Insearting images
+        * To insert image, use <img> tag.
+        * It is a single tag, void element.
+        * It is inline element
+        * Used to insert static images.
+        * Preferably .webp images should be used in web page
+        * Syntax:
+           <img src = "" alt="">
+        * Attributes:
+           1. Src - Source : Name/ Path/URL of the image
+           2. alt - alternate: Describe the alternative name given to image to enhance screen readability. It work in the absense of source.
+           3. height & width - px, %.
+           4. title    
+      
+
+     <!-- 
+       * Picture 
+        -> to insert responsive image according to the different devices <picture> tag will be used.
+        -> It is paired tag, contains <source> that defines different sources to different devices.
+        -> Syntax:
+          <picture>
+            <source media="" srcset="">
+            <source media="" srcset="">
+            <source media="" srcset="">
+            <img src="" alt="">
+          </picture>
+     
+     -->
+
+-- Inserting video ---
+   -> <video> tag is used to insert video into the web page.
+    -> It is paired tag, hold the content to display an error message when browser is not supporting.
+    -> It doesnot support to insert youtube videoss.
+    -> Syntax:
+    <video src=""> Video not supported by browser</video>
+    ->Attributes:
+    1. src
+    2. autoplay
+    3. muted
+    4. controls
+    5. loop
+    6. poster
+
+    ----- insert Audio ---
+
+      -> <audio>
+      -> Paired, inline element.
+      -> Syntax:
+      -> <audio src="">
+            Audio format not supported by brower
+      -> </audio>
+
+      -> Attributes
+         1. src
+         2. controls
+         3. loop
+         4. muted
+         5. width -> %
+
+°  Scrolling Text
+        -> Stands for moving text
+        -> <marquee> tag is used to insert scrolling text into the web .
+        -> Syntax:
+           <marquee behaviro="" direction="" > Content</marquee>
+        -> Attributes:
+           1. behavior : scroll, alternate
+           2. direction : right, left, up and down
+           3. loop: repeatation
+           4. scrollamount : Speed
+
+
+    Ifarme
+
+    -> Standes for inline frame.
+    -> <iframe> its used to create nested web page
+    -> it is paired, inline.
+    -> it is used to embed external web pages into our web page.
+    -> Syntax:
+        <iframe src="" frameborder=""></ifarme>
+
+    -> Attributes:
+       src: source -> name/path/URL
+       frameborder: -> define border around iframe
+    -> Ex:
+       Payment intigretion, youtube videos, google map.
+
+Special Charecter
+
+     -> Html allow developer to insert special into web pages by providing entitier.
+     -> We can insert logical, mathematical currency.
+
+Hyper lines
+
+    -> it is an method to create hyper text
+    -> <a> (anchor) tag is used to create hyper text
+    -> Paired and inline element
+    -> Syntax:
+        <a href="" target="" >Content</a>
+    ->Attributes:
+       1. href:- Hyper reference -> Name/Path/URL
+       2. Target:- Decide new page location.
+       3. Download:- Used to Download files from server. 
+
+ * List
+        -> Grouping a set related items is know as list.
+        -> Types:
+             1. Ordered List:
+                  -> Creating a list eight in ascending or descending order
+                  -> <ol> is used to create ordered list. and it conetens list items using <li>
+                  -> This list uses markers like 1(def), A, a, I, i.
+                  -> Syntax:
+                      <ol>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                      </ol>
+                  -> Attributes:
+                      1. type : defines the marker type.
+                      2. Start : Defines starting order of an list.
+                      3. Reverse : Reverses the marker order.
+             2. Unordered List:
+                  -> Creating a list whithout any perticular order
+                  -> <ul> is uses to create unordered list, and it contains list itesm using <li>
+                  -> Suported marker are  - desc(def), circle, square and none.
+                  -> Syntax:
+                      <ul>
+                          <li>Item</li> 
+                          <li>Item</li> 
+                          <li>Item</li> 
+                      </ul>
+             3. Difinition List
+                  -> <dl> is use to create definition list, and it contains <dt> (def term) and <dd> (describe definition)
+                  -> Syntax: 
+                        <dl>
+                            <dt></dt>  
+                            <dt></dt>  
+                            <dt></dt>  
+                            <dt></dt>  
+                        </dl>
+
+    Table
+       -> <table> is used to create table.
+       -> Also contains <tr>(row), <th> (head).
+       -> Syntax:
+            <table>
+                <tr>
+                    <th>good</th>  
+                    <th>dipak</th>  
+                    <th>good</th>  
+                    <th>good</th>  
+                    <th>good</th>  
+                    <th>good</th>
+                </tr>
+                <tr>
+                    <td>data</td>         
+                    <td>data</td>         
+                    <td>data</td>
+                </tr>
+            </table>                  
+       -> Attributes:
+            1. boreder        
+            2. rowspan        
+            3. colspan        
+            4. cell padding        
+            5. cell spacing
+            6.. style:
+            a. border collepse
+            b. float
+            c. text-align
+            7. bg-color         
+
+ Form
+      -> Form is used to collect data from user.
+      -> We can collect text, password, number, email, date, time, uri, color.
+      -> controlles
+         Check box
+         radio button
+         dropdown menu
+       -> Syntex:
+       <form action="" method="">form element</form>   
