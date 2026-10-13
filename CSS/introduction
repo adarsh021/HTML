@@ -1,0 +1,48 @@
+CSS:
+   -> stand for cascading style sheet  
+   -> used increase standards and overall look of web page to make it presentable.
+   -> with Css user can Understand the web page content easily by making UI as rich.
+   -> History:
+         -> CSS invert in W3C(consortium) on 17th dec, 1996 by hackon wiem Lie.
+   -> uses
+         -> Improves looks.
+         -> Separates content and design.
+         -> maintains consistancy across multiple pages.
+         -> Make web pages as responsive for different types of devices(mobile, tablets, laptop).
+         -> Reduce code duplication.
+         -> Adds visuals effect like animation, transition , transformation.
+
+How to use CSS?
+
+    selector {
+        prop : value;
+
+    }
+    -> Selector : targetting HTML element by using its name , id , class.
+    -> Declaration block contains one or more Css Declaration Separated by ";".
+    _. one declartion contains css property name  and value seperated by ":".
+    We can not write duplicate property in same declartion block, if it is so always last occurance will executes.
+
+How Css Works?
+
+-> when CSs loaded into the broweser , tree like struct called CSSOM(Cascading style sheet object model) will be created after parsing css in browser.
+-> just like as the browser converts html into a DOM(Document Object Model), it converts css into CSSOM
+-> Later browser will combines both DOM and CSSOM to create a render tree.
+
+
+          HTML                CSS
+           |                   |
+       HTML Parser         CSS Parser
+           |                   |
+          DOM                 CSSOM
+           \                  /
+            \                /
+             \              /
+              \            /
+               \          /
+                Render Tree
+                     |  
+    Layout(Calculating the size & Position)
+                     |
+    Painting(Applies colors.borders.shadows)
+    
