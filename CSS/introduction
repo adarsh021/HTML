@@ -29,6 +29,61 @@ How Css Works?
 -> just like as the browser converts html into a DOM(Document Object Model), it converts css into CSSOM
 -> Later browser will combines both DOM and CSSOM to create a render tree.
 
+Types off CSS
+   1. Inline Css:
+      -> Write css property by using 'style' attribute directly into the html element.
+      -> Syntax:
+          <h1 style="Color:'blue';font-size:'30px'"></h1>
+      -> Advantages:
+          - Good for small change.
+          - It is having high priority.
+      -> Disadvantage:
+          - It is requred to apply for each and every html element.
+          - Not reusable.
+
+   2. Internal CSS.
+      -> write the css property inside <style> tag in the HTML Document.
+      -> Advantage:
+          - reusable
+          - Easy to access.
+          - Better for single pages.
+    -> Disadventage:
+          - Cannot reuse across multiple pages.
+
+   3. External CSS:
+      -> Keeping styling property in seperate CSS file.
+      -> Can be connected to html using <link> tag.
+      -> Advantage:
+          - Can be used across multiple web pages.
+          - Most recomended.
+          - Easy to maintain.      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           HTML                CSS
            |                   |
