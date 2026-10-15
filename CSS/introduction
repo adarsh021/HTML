@@ -58,8 +58,22 @@ Types off CSS
           - Most recomended.
           - Easy to maintain.      
 
-
-
+Box model:
+   -> It is an illustraction of box, which wrap around each and every html element.
+   -> It is used to maintain space between element.
+   -> mainly consider of content, margin, padding and border.
+   -> Contents of box model
+       1. Content: It is core part box model. it can content of any type like text, image, video, table, form ...
+       2. padding: padding goes around content.
+         -> It clears the are between content and boreder.
+         -> It is transparent in nature.
+         -> Applying -ve padding is not possible.
+       3. Border: Border goes around content and padding.
+         -> it is visible to the user.
+       4. Margin: It goes around boreder.
+         -> cleare the are between window/ Parent to border.
+         -> it can transperent.
+         -> Can apply -ve margin.   
 
 
 
