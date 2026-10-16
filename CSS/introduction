@@ -75,9 +75,42 @@ Box model:
          -> it can transperent.
          -> Can apply -ve margin.   
 
+Basic selector
+  * Tag/name selector:
+    targeting an html element bu using its tag name.
+    -> Syntax:
+        <tag>content</tag>
+        # css
+            tag{
+                // css prop
+            }
+    
+    * Id selector:
+        -> selecting an element by writing a "id" attribute, to applying css property.
+        -> id should be unique in whole web page.
+        -> cannot be duplicated
+        -> creating sub id is not allow.
+        -> Uses '#' follow by id-name
+        -> Syntax:
+            # id-name{
+                property
+            }
+        <tag id=id-name>content</tag>
 
+    * class selector:
+       -> slecting an elemnt by using"class" to apply css property
+       ->class can be duplicated.
+       ->creating sub class is allowed
+       -> uses'.' to select an class to apply css
+       -> Syntax:
+          .class-name{
+            <tag class="class-name">
+          }
+  
 
-
+    * attributes slector:
+        ->targeting an html element  
+    
 
 
 

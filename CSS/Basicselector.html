@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100vh;
+            width: 100%;
+            background-color: cadetblue;
+            padding: 1px;
+        }
+        #primary-wrapper{
+            background-color: rgb(29, 251, 47);
+        }
+        .wrap{
+            background-color: aqua;
+        }
+        .extra-prop{
+            border: 5px blue solid;
+        }
+        /* Attributes selector */
+        input{
+            display: block;
+            margin-top: 20px;
+            margin-left: 43%;
+        }
+        input[type="text"]{
+            border:2.5px red solid;
+        }
+        input[type="password"]{
+            border:2.5px blue solid;
+        }
+        input[type="submit"]{
+            border: none;
+            background-color: color-mix(in srgb, yellow 50%, red 50%);
+            font-size: 20px;
+            height: 40px;
+            width: 170px;
+        }
+        /* Group  selector */
+        h1,p, #span-section{
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        /* Universal selector */
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="primary-wrapper">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+        <input type="submit" value="Login">
+    </div>
+    <div></div>
+    <div class="wrap">
+        <h1>This is example for group selector</h1>
+        <p>This is example for group selector</p>
+        <h3 id="span-section">This is example for group selector</h3>
+    </div>
+    <div></div>
+    <div class="wrap extra-prop"></div>
+    <div></div>
+    <div class="extra-prop"></div>
+
+</body>
+</html>
