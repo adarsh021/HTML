@@ -109,15 +109,41 @@ Basic selector
   
 
     * attributes slector:
-        ->targeting an html element  
+        ->targeting an html element by using its attributes.
+        -> syntax:-
+              selector[attributes ="Value"]{
+                tag attributes=""
+              } 
     
+    * Group Selector
+        -> targeting two or more selector to apply same css property by using ","(comma seperator)
+        -> Syntax:
+          sel1, sel2 , sel3, {
+            //css prop
+          }
+
+    * Universal slector:
+        -> Selector all html element on the web pages to apply some css property.
+        -> Uses "*" operator
+        -> Syntax:
+        *{
+            property
+        }
+        -> Commonly used in removing margin from all element and to decide box-sizing.
 
 
+    * opecity:
+       -> applying transparency to an html element.
+       -> 0 - 1 - visible
+          |
+          completely visible
 
-
-
-
-
+    * Grediant:
+       -> Smooth transition between two or more color.
+       -> Types:
+          1. Linear-gredient
+          2. Radiat-gredient
+          3. Conic-gredient
 
 
 
