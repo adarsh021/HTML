@@ -24,6 +24,33 @@
             width: 300px;
             background-image: linear-gradient(cyan,indigo);
         }
+        .lg-3{
+            background-color: aqua;
+            /* background-image: repeating-linear-gradient(35deg,magenta 0px, lime 20px, indigo 60px); */
+        }
+        .main{
+            height: 100vh;
+            width: 100%;
+        }
+        .tile{
+            height: 50%;
+            width: 49.8%;
+            display: inline-block;
+        }
+        .one{           
+            background-image: repeating-linear-gradient(135deg,magenta 0px, lime 20px, indigo 60px);
+        }
+        .two{
+            background-image: repeating-linear-gradient(45deg,magenta 0px, lime 20px, indigo 60px);
+        }
+        .three{
+            background-image: repeating-linear-gradient(225deg,magenta 0px, lime 20px, indigo 60px);
+        }
+        .four{
+            background-image: repeating-linear-gradient(315deg,magenta 0px, lime 20px, indigo 60px);
+        }
+       
+
     </style>
 </head>
 <body>
@@ -31,6 +58,51 @@
         <button><h1>Submit</h1></button>
     </div>
     <div class="wraper lg-2"></div>
-
+    <div class="wraper lg-3"></div>
+    <hr>
+    <div class="main">
+        <section class="tile one"></section>
+        <section class="tile two"></section>
+        <section class="tile three"></section>
+        <section class="tile four"></section>       
+    </div>
+    <style>
+        .rg-1{            
+            background: radial-gradient(circle,magenta 0%, indigo 50%, lime);
+        }
+        .rg-2{
+            height: 600px;
+            width: 600px;
+            margin: auto;
+            background: radial-gradient(circle farthest-side at 30% 30%, white, black);
+            border-radius: 50%;
+        }
+        .rg-3{
+           height: 100vh;
+            background: repeating-linear-gradient(circle, gray 0px, white 10px, black 20px);
+        }
+    </style>
+    <div class="wrapper rg-1"></div>
+    <div class="wrapper rg-2"></div>
+    <div class="wrapper rg-3"></div>
+    <!-- Conic gradient -->
+     <style>
+        .cg-1{
+            height: 100vh;
+            background: conic-gradient(red,yellow,blue,red);           
+        }
+        .cg-2{
+            height: 100vh;
+            background: conic-gradient(red 0deg 90deg, yellow 90deg 180deg, lime 180deg 270deg, blue 270deg 360deg);
+        }
+        .cg-3{
+            height: 100vh;
+            width: 100%;
+            background: repeating-conic-gradient(red 0deg 30deg, orange 30deg 60deg, lime 60deg 90deg);
+        }
+     </style>
+     <div class="cg-1"></div>
+     <div class="cg-2"></div>
+     <div class="cg-3"></div>
 </body>
 </html>
