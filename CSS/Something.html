@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tiwari{
+            border: 2px red solid;
+            margin: 10px;
+        }
+        .shukla{
+            border: 2px blue solid;
+            margin: 10px;
+        }
+        /* .tiwari h1{
+            color: darkblue;
+            font-size: 1.5rem;
+        }.shuklashukla .next-gen p{
+            color: lime;
+            font-size: 2.3rem;
+        } */
+
+        .tiwari .next-gen > p{
+            color: tomato;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+ <div class="tiwari">
+    <h1>This is sandeep tiwari</h1>
+    <p>This is sandeep Indu tiwari</p>
+    <div class="next-gen">
+        <h1>This is adarsh tiwari</h1>
+        <p>this is adarsh tiwari wife</p>
+        <div class="next-next-gen">
+            <h1>This is son of adarsh tiwari</h1>
+            <p>This is doughter-in-law of adarsh tiwari</p>
+        </div>
+        <h1>Some one gents from towari family</h1>
+    </div>
+ </div>
+  <div class="shukla">
+    <h1>This is sandeep shukla</h1>
+    <p>This is sandeep Indu shukla</p>
+    <div class="next-gen">
+        <h1>This is adarsh shukla</h1>
+        <p>this is adarsh shukla wife</p>
+        <div class="next-next-gen">
+            <h1>This is son of adarsh shukla</h1>
+            <p>This is doughter-in-law of adarsh shukla</p>
+        </div>
+        <h1>Some one gents from shukla family</h1>
+    </div>
+</div>
+    <hr>
+    <style>
+        label{
+            font-size: 1.2rem;
+            padding: 0px 7px;
+            border-radius: 6px;
+            background-color: seagreen;
+        }
+        input[type="radio"]+label{
+            color: white;
+        }
+        input[type="radio"]:checked+label{
+            color: black;
+        }
+    </style>
+
+    <p>Chose your gender:</p>
+    <input type="radio" name="gender" id=""><label for="">Male</label>
+    <input type="radio" name="gender" id=""><label for="">Female</label>
+    <input type="radio" name="gender" id=""><label for="">Other</label>
+ <pre>
+
+
+
+
+
+
+
+ </pre>
+
+ <hr>
+
+ <!-- General Sibling selector -->
+
+ <style>
+    .another div~p{
+        .another{
+            color: yellow;
+            background-color: darkolivegreen;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
+        }
+    }
+ </style>
+ <div class="another">
+    <h1>This is first child</h1>
+    <p>This is 2nd child</p>
+    <div>This is first child</div>
+    <h4>This is 2nd child</h4>
+    <p>This is 3rd child</p>
+    <span>This is 4th child</span>
+    <p>This is 5th child</p>
+    <h4>This is 6th child</h4>
+ </div>
+    <!-- Combination
+     -> Used to combine two or more selector, to apply css property to a perticuler element.
+     -> Explains the relationship between one selector to another selector.
+     -> Types:
+        1. 
+
+
+
+
+        descendent comb selector 
+
+        -> Stand for a number who belongs to same family.
+        -> Select an html element which is descendent of special element.
+        -> it uses "  " (space) to combine seletor. 
+        
+
+        2. Child Combinator
+           It selects an html element, if that element is direct child to specify selector
+           -> it uses '>' to combine selector
+
+        3.Adjucent sibling selector:
+           -> Adjusent stands for sibling who follow immediately after
+           -> Selects an html element if it is adjust to specify selector.
+           -> It uses '+'
+           -> Syntax:
+            
+                  sel1 + sel2{
+                    //prop
+                  }
+
+        4. General Sibling Selector
+           -> Select all mattching elements. there are followinng after specified element
+           -> It user '~'(fild)
+        
+        -->
+</body>
+</html>
