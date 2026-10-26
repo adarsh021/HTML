@@ -18,11 +18,11 @@ Pseudo-class
          }
 
     -> Types:
-         1.link
-         2.visited
-         3.active
-         4.hover
-         5.focus
+         1.link:- Changes the state of unvisited links availabel in web pages
+         2.visited:- Changes the state of visited link in web pages
+         3.active:- It shows the active state of an html element when user clicks on html element
+         4.hover:- Change the state of an element when user takes curseer over element.
+         5.focus:- Used to change the state an inpiut element when user clicks on it.
          6.first-child
          7.last-child
          8.nth-child
@@ -32,5 +32,78 @@ Pseudo-class
          12.root
     
     -->
+         <style>
+            .links>a{
+                text-decoration: none;
+                font-size: 3rem;
+                line-height: 80px;
+            }
+            .links>a:link{
+                color: red;
+            }
+            .links>a:visited{
+                color: green;
+            }
+            .links>a:active{
+                color: yellow;
+            }
+            button{
+                height: 65px;
+                width: 300px;
+                margin-left: 20%;
+                /* background-color: linear-gradient(25deg, blueviolet, magenta); */
+                background-color: red;
+                border: none;
+                border-radius: 10px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                outline: 3px white solid;
+                outline-offset: -10px;
+                color: white;
+                transition: all 200ms linear;
+            }
+            button:active{
+                transform: scale(0.95);
+                
+            }
+            button:hover{
+                outline: 3px color-mix(in srgb, blueviolet 50%, magenta 50%) solid;
+                outline-offset: 7px;
+            }
+            .links>a:hover{
+                color: blueviolet;
+                font-size: 5rem;
+                text-shadow: 5px 4px 0px black;
+                font-weight: 400;
+            }
+         </style>
+    <div class="links">
+        <a href="https://www.google.come">Google</a><br>
+        <a href="https://www.instagram.come">Instagram</a><br>
+        <a href="https://www.github.come">Github</a><br>
+        <a href="https://www.vercel.come">Vercel</a><br>
+        <button>Click User</button> <br><br><br><br>
+        <style>
+            .img-wrap{
+                height: 300px;
+                width: 450px;
+                border-radius: 15px;
+                margin: auto;
+                overflow: hidden;
+            }
+            .img-wrap img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            .img-wrap img:hover{
+                transform: scale(2);
+                transition: transform 250ms linear;
+            }
+        </style>
+        <div class="img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP8EKKuElW72xFJK0YSn3py8v2Hia4pr6vMIWIlN4-Lg&s=10" alt="">
+        </div>
+    </div>        
 </body>
 </html>
