@@ -18,18 +18,18 @@ Pseudo-class
          }
 
     -> Types:
-         1.link:- Changes the state of unvisited links availabel in web pages
-         2.visited:- Changes the state of visited link in web pages
-         3.active:- It shows the active state of an html element when user clicks on html element
+         1.link:- Changes the state of unvisited links availabel in web pages.
+         2.visited:- Changes the state of visited link in web pages.
+         3.active:- It shows the active state of an html element when user clicks on html element.
          4.hover:- Change the state of an element when user takes curseer over element.
-         5.focus:- Used to change the state an inpiut element when user clicks on it.
-         6.first-child
-         7.last-child
-         8.nth-child
-         9.checked
-         10.has()
-         11.not()
-         12.root
+         5.focus:- Used to change the state an input element when user clicks on it.
+         6.first-child:- it is used to select the first element to the targeted element.
+         7.last-child:- It is used to select the last element to the targeted element.
+         8.nth-child:- It is used to select the nth element to the targeted element.
+         9.checked:- Change the state when element chaked.
+         10.has():- 
+         11.not():- 
+         12.root:- 
     
     -->
          <style>
@@ -104,6 +104,73 @@ Pseudo-class
         <div class="img-wrap">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP8EKKuElW72xFJK0YSn3py8v2Hia4pr6vMIWIlN4-Lg&s=10" alt="">
         </div>
-    </div>        
+    </div> 
+    <hr>
+    <style>
+        input[type="text"]{
+            box-sizing: border-box;
+            height: 50px;
+            width: 50px;
+            border: black 1.5px solid;
+            border-radius: 200px;
+            margin-left: 25%;
+            padding-left: 10px;
+            font-size: 1.1rem;
+            outline: none;
+            transition: all 1s linear;
+        }
+        input[type="text"]:focus{
+            width: 450px;
+            border: 1.5px lime solid;
+            box-shadow: 0px 0px 10px 3px lime;
+        }
+    </style> 
+    <input type="text" name="" id="" placeholder="Search your product here..."> 
+    <hr>
+    <style>
+        .primary-text p:first-child{
+            color: red;
+            font-size: 3rem;
+        }
+        .primary-text p:last-child{
+            color:  blue;
+            font-size: 4rem;
+        }.primary-text p:nth-child(0){
+            color: aqua;
+            font-size: 2rem;
+        }.primary-text p:nth-child(odd){
+            color: violet;
+            font-size: 6rem;
+        }
+    </style>
+    <div class="primary-text">
+        <p>This is 1 element</p>
+        <p>This is 2 element</p>
+        <p>This is 3 element</p>
+        <p>This is 4 element</p>
+        <p>This is 5 element</p>
+        <p>This is 6 element</p>
+        <p>This is 7 element</p>
+        <p>This is 8 element</p>
+        <p>This is 9 element</p>
+    </div>
+    <hr>
+    <hr>
+    <style>
+        input[type='radio']:checked{
+            accent-color: lime;
+        }
+        input[type='radio']:checked+label{
+            color: magenta;
+        }
+    </style>
+    <p>Choose your age</p>
+    <input type="radio" name="gender" id=""><label for="">Male</label>
+    <input type="radio" name="gender" id=""><label for="">Female</label>
+    <input type="radio" name="gender" id=""><label for="">Others</label>
+    <pre>
+
+
+    </pre>     
 </body>
 </html>
