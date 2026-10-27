@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=5, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root{
+            --primary-font-family:Tahoma;
+            --primary-font-size: 2rem;
+            --primary-color: lime;
+        }
+    </style>
 </head>
 <body>
     <!-- 
@@ -27,9 +34,9 @@ Pseudo-class
          7.last-child:- It is used to select the last element to the targeted element.
          8.nth-child:- It is used to select the nth element to the targeted element.
          9.checked:- Change the state when element chaked.
-         10.has():- 
-         11.not():- 
-         12.root:- 
+         10.has():- apply the css property to parrent element if that parrent has specified element
+         11.not():- Excludes and specified html element from applying css.
+         12.root:- It is use to create a vairiable in css.
     
     -->
          <style>
@@ -83,6 +90,8 @@ Pseudo-class
         <a href="https://www.github.come">Github</a><br>
         <a href="https://www.vercel.come">Vercel</a><br>
         <button>Click User</button> <br><br><br><br>
+
+
         <style>
             .img-wrap{
                 height: 300px;
@@ -104,8 +113,11 @@ Pseudo-class
         <div class="img-wrap">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP8EKKuElW72xFJK0YSn3py8v2Hia4pr6vMIWIlN4-Lg&s=10" alt="">
         </div>
-    </div> 
-    <hr>
+    </div> <br><br>
+    <hr><br><br>
+
+
+
     <style>
         input[type="text"]{
             box-sizing: border-box;
@@ -126,7 +138,11 @@ Pseudo-class
         }
     </style> 
     <input type="text" name="" id="" placeholder="Search your product here..."> 
+    <br><br><br>
     <hr>
+    <br><br>
+
+    
     <style>
         .primary-text p:first-child{
             color: red;
@@ -167,7 +183,115 @@ Pseudo-class
     <p>Choose your age</p>
     <input type="radio" name="gender" id=""><label for="">Male</label>
     <input type="radio" name="gender" id=""><label for="">Female</label>
-    <input type="radio" name="gender" id=""><label for="">Others</label>
+    <input type="radio" name="gender" id=""><label for="">Others</label><hr><hr>
+    <style>
+        *{
+            margin: 0;
+        }
+        .all-food{
+            height: 60vh;
+            width: 100%;
+            /* background-color: ; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .all-food>.card{
+            height: 95%;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            text-align: center;           
+            padding: 10px;
+            border: 1px solid black;
+            margin: 3px;
+        }
+        .food-img{
+            width: 90%;
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .all-food img{
+            width: 100%;
+            height: 100%;
+        }
+        .all-food .in-stock{
+            color: var(--primary-color);
+            font-size: var(--primary-font-size);
+        }
+        .card:hover img{
+            transform: scale(1.05);
+            transition: all 100ms linear;
+        }
+        .all-food .out-stock{
+            color: orange;
+            font-size: 1.1rem;
+        }
+        .all-food .card:has(.out-stock){
+            filter: grayscale(70%);
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+    </style>
+    <div class="all-food">
+        <div class="card">
+        <div class="food-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Ljxcf3-OrdjIn8KINylw8wsOJ9YWBwJWHrlWCrv1qg&s=10" alt="">
+        </div>
+        <h2>McDonald's</h2>
+        <p>Burger, American, Fast Food, Ice Cream</p>
+        <p>&#8377;400.00</p>
+        <span class="in-stock">. Availebal</span>
+    </div>
+    <div class="card">
+        <div class="food-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTso0BfJUtjgH_SK4HB7OoHI6QNk7_tlgcFvj408zgkrw&s=10" alt="">
+        </div>
+        <h2>McDonald's</h2>
+        <p>Burger, American, Fast Food, Ice Cream</p>
+        <p>&#8377;400.00</p>
+        <span class="out-stock">. Not Availebal</span>
+    </div>
+    <div class="card">
+        <div class="food-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHG8O5WSJ_az4J6qY9ch4zvGI0yNY3AwOzVmraEFRNEQ&s=10" alt="">
+        </div>
+        <h2>McDonald's</h2>
+        <p>Burger, American, Fast Food, Ice Cream</p>
+        <p>&#8377;400.00</p>
+        <span class="in-stock">. Availebal</span>
+    </div>
+    </div>
+    <hr>
+    <hr>
+    <br><br>
+    <style>
+        .secondary-text p{
+            color: black;
+        }
+        .secondary-text:not(p){
+            color: red;
+        }
+    </style>
+    <div class="secondary-text">
+          <h1>This is h1</h1>
+          <p>This is para</p>
+          <span>This is span</span>
+          <div>This is div</div>
+          <h2>This is H2</h2>
+    </div>
+    <br><br><hr> <br><br>
+
     <pre>
 
 
