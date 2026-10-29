@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+     Display property
+       -> display property define the displaying beheviour of an html element.
+       types:
+          1. Block
+          2. None
+          3. Inline
+          4. Inline block
+          5. Flex
+        
+       1. Block:
+          -> it is defult display for few eleemnt.
+          -> Block element always consume hole width of window.
+          -> Block element start with new line.
+          -> Block elements accepts height and width.
+          -> Example : - all heading tags, <div>, <li>, etc.. 
+        
+       2. None:
+          -> Elimintes element completly from window layout.
+          
+       3. Inline:
+           -> It is default for few html element .
+           -> Display elements as inline i.e in same line side by side.
+           -> Height and width won't have any effect. 
+
+       4. Inline block:
+           -> Makes element to be display in same line as inline-lavel.
+           -> Elements accepts height and width. 
+           
+       5. Flex:
+           -> Stands for flexible box.
+           -> it makes an html element an inline-level block contains and create a relationship of parent and child parent element is called as flext-box and childern are called as flex-items.
+           -> handle the child element in either one directional and one-dimensional either row or column wise.
+           -> Mainaly used in managing space alingment of child element and it is most famously used for making web page as responsive.
+           
+           
+    -->
+     <style>
+        h1{
+            background-color: chartreuse;
+            height: 100px;
+            display: flex;
+            /* text-align: center; */
+            align-items: center;
+            justify-content: center;
+        }
+     </style>
+    <h1>Jspider</h1>
+    <h1>BTM</h1>
+    <h1>Layout</h1>
+    <!-- Ex. 1. navigation bar in laptop screen Example for inline element -->
+    <style>
+        nav{
+            background-color: gainsboro;
+            height: 68px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 12px 40px;
+            font-size: 1.1rem;
+            color: darkgreen;
+            font-weight: 900;
+            border-radius: 15px;
+        }
+        nav a:hover{
+            background-color: aqua;
+            color: blue;
+        }
+        .secondery-nav{
+           height: fit-content;
+           width: 100%;
+           padding: 20px;
+        }
+        .secondery-nav a{
+           display: block;
+        }
+    </style>
+    <nav>
+        <a href="##">Home</a>
+        <a href="##">Dashboard</a>
+        <a href="##">About</a>
+        <a href="##">Sign up</a>
+        <a href="##">Sign in</a>
+    </nav>
+    <nav class="secondery-nav">
+        <a href="##">Home</a>
+        <a href="##">Dashboard</a>
+        <a href="##">About</a>
+        <a href="##">Sign up</a>
+        <a href="##">Sign in</a>
+    </nav>
+     <br><br><br>
+     <!-- Display : none -->
+     <style>
+        .model{
+            height: 100vh;
+            width: 100%;
+            background-color: aquamarine;
+            padding: 1px;
+        }
+        .model .model-card{
+            height: 200px;
+            width: 350px;
+            background-color: white;
+            margin-top: 14%;
+            margin-left: 28%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.338) , 0px 0px 15px 10px rgba(0, 0, 0, 0.61) inset;
+            text-align: center;
+            padding-top: 50px;
+            box-sizing: border-box;
+
+            /* display: none; */
+        }
+        .model .model-card button{
+            padding: 5px 7px;
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+     </style>
+     <div class="model">
+        <div class="model-card">
+            <h2>Message</h2>
+            <button>Close</button>
+        </div>
+     </div>
+
+     <br><br><br>
+     <style>
+        .box{
+            height: 200px;
+            width: 180px;
+            background-color: cadetblue;
+            margin: 10px;
+            display: inline-block;
+        }
+     </style>
+     <div class="box">Drawer one</div>
+     <div class="box">Drawer two</div>
+     <div class="box">Drawer three</div>
+    <pre>
+
+
+
+
+
+    </pre>
+</body>
+</html>
